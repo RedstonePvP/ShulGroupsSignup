@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en" >
+  <head>
+    <title></title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body style="overflow-x: hidden">
+      
+      <style>
+          
+          body {
+              /*background-image: url(../static/cool-background2.png);*/
+              background-color: #EDEDEF;   
+          }
+          
+          a {
+              color: black;
+          }
+          
+          a.hover {
+              color: black;
+          }
+          
+      </style>
+      
+      
+      <div class="container-fluid mt-2">
+          <h1>{{title}}</h1>
+          <hr class="bg-dark rounded" style="height: 7px;">
+          <div class="row">
+              
+              <div class="card bg-dark ml-4 mr-4 text-white" style="width: 100%;">
+              
+                  <ul class="list-group ml-2 mr-2 mt-3 mb-3 text-dark">
+                      <li class="list-group-item active">Safety Protocols and Rules</li>
+                      <li class="list-group-item">Each Group Is Limited to 15 Children</li>
+                      <li class="list-group-item">Groups will be held outside in the back of 609, parents may not enter the backyard with their children</li>
+                      <li class="list-group-item">During drop off, children will be taken to their group by a group leader. If late a group leader will be there to bring the child to their group.</li>
+                      <li class="list-group-item">During pickup a group leader will meet parents one by one to pick up their kids. A Group leader will bring children to their parents. Parents MUST wear a mask during pickup and drop off.</li>
+                      <li class="list-group-item">IMPORTANT: No child who comes to groups may leave by themselves even if it is normal practice to do so, a parent MUST pickup their kids and children may not leave the premises otherwise</li>
+                    </ul>
+                  
+                  <div class="ml-2 mr-2 mb-4">
+                      
+                      {% for field, errors in form.errors.items() %}
+                    <div class="alert alert-danger">
+                        {{ form[field].label }}: {{ ', '.join(errors) }}
+                    </div>
+                    {% endfor %}
+                    
+                      <form method="post" action="">
+                          {{ form.hidden_tag() }}
+                          
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputEmail4">Child Name</label>
+                              {{ form.cname(placeholder="Child Name", class="form-control mb-3") }}
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputPassword4">Age</label>
+                              {{ form.age(placeholder="Age", class="form-control mb-3", type="number") }}
+                            </div>
+                          </div>
+                          
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputEmail4">Email</label>
+                              {{ form.email(placeholder="Email", class="form-control mb-3") }}
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputPassword4">Address</label>
+                              {{ form.addr(placeholder="Address", class="form-control mb-3") }}
+                            </div>
+                          </div>
+                          
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputEmail4">Parent Name</label>
+                              {{ form.pname(placeholder="Parent Name", class="form-control mb-3") }}
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputPassword4">Phone Number</label>
+                              {{ form.phone(placeholder="Phone Number", class="form-control mb-3") }}
+                            </div>
+                          </div>
+                          
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputEmail4">YIWH Minyan</label>
+                              {{ form.minyan(placeholder="Minyan", class="form-control mb-3") }}
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputPassword4">Allergies, if no write None</label>
+                              {{ form.alerg(placeholder="Allergies", class="form-control mb-3") }}
+                            </div>
+                          </div>
+                          
+                          <div class="form-group">
+                            <label for="inputAddress2">Name of Pickup Person</label>
+                            {{ form.pickup(placeholder="Pickup Name", class="form-control mb-3") }}
+                          </div>
+
+
+                          {{ form.submit(class="btn btn-primary") }}
+                      </form>
+                      
+                      
+                  </div>
+                  
+              </div>
+              
+          </div>
+      
+      </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/d8440dd275.js" crossorigin="anonymous"></script>
+      
+  </body>
+    
+</html>

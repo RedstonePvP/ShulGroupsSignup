@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" >
+  <head>
+    <title></title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+      <link rel="icon" href="https://images.shulcloud.com/71/logo/1496368178.img">
+  </head>
+  <body style="overflow-x: hidden">
+      
+      <style>
+      
+          .card, .btn, .form-control { border-radius: 10; }
+          
+          body {
+              /*background-image: url(../static/cool-background2.png);*/
+              background-color: #EDEDEF;
+              
+              
+          }
+          
+          a {
+              color: black;
+          }
+          
+          a.hover {
+              color: black;
+          }
+          
+      </style>
+      
+      
+      <div class="container-fluid mt-2">
+          
+          {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                   {% for message in messages %}
+                    <div class="message_flash alert alert-danger ml-5 mr-5 mt-1 mb-1" role="alert">{{ message }}</div>
+                   {% endfor %}
+             {% endif %}
+            {% endwith %}
+          
+          <h1>The Bruce Wenger Youth Department Registration System</h1>
+          {% if "logged_in" in session %} <a href="/admin" class="btn btn-primary">Admin Controls</a> {% endif %}
+          <hr class="bg-dark rounded" style="height: 7px;">
+          <div class="row mr-2">
+              
+              <div class="card-columns pl-2 pr-2 mr-2" style="width: 100%;">
+                  
+                  {% for week in l_data %}
+                  <div class="card">
+                    
+                      <div class="card-header">
+                        <h2 class="card-title">{{week[2]}} - {{week[0]}}</h2>
+                      </div>
+                      
+                    <div class="card-body">
+                        
+                       
+                            
+                            {% for group in week[1] %}
+  
+                        <a href="{{group[2]}}"><div class="card bg-{{group[1]}} text-white">
+                            <div class="card-body">
+                              <h5>{{group[0]}}</h5>
+                            </div>
+                          </div></a>
+                            
+                            {% endfor %}
+                            
+                      
+                      
+                    </div>
+                  </div>
+                  {% endfor %}
+                  
+                  {% if not l_data %}
+                  
+                  <div class="card">
+                    
+                      <div class="card-header">
+                        <h2 class="card-title">Sorry</h2>
+                      </div>
+                      
+                    <div class="card-body">
+                        
+                        <h2>There Are No Events That You Can Reserve At This Time, Please Come Back Later!</h2>
+                        
+                    </div>
+                  </div>
+                  
+                  {% endif %}
+
+                  
+
+                </div>
+              
+          </div>
+      
+      </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/d8440dd275.js" crossorigin="anonymous"></script>
+      
+  </body>
+    
+</html>

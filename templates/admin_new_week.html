@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" >
+  <head>
+    <title></title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body style="overflow-x: hidden">
+      
+      <style>
+      
+          .card, .btn, .form-control { border-radius: 10; }
+          
+          body {
+              /*background-image: url(../static/cool-background2.png);*/
+              background-color: #EDEDEF;
+              
+              
+          }
+          
+          a {
+              color: black;
+          }
+          
+          a.hover {
+              color: black;
+          }
+          
+      </style>
+      
+      
+      <div class="container-fluid mt-2">
+          
+          {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                   {% for message in messages %}
+                    <div class="message_flash alert alert-danger ml-5 mr-5 mt-1 mb-1" role="alert">{{ message }}</div>
+                   {% endfor %}
+             {% endif %}
+            {% endwith %}
+          
+          <h1>Groups Signup - Admin</h1>
+          <hr class="bg-dark rounded" style="height: 7px;">
+          <div class="row">
+              
+              <div class="col"></div>
+              
+              <div class="col">
+
+                    {% for field, errors in form.errors.items() %}
+                    <div class="alert alert-error">
+                        {{ form[field].label }}: {{ ', '.join(errors) }}
+                    </div>
+                    {% endfor %}
+                  
+                  <div class="card">
+                    
+                      <div class="card-header">
+                        <h2 class="card-title">New Week</h2>
+                      </div>
+                      
+                    <div class="card-body">
+                        
+                        <div class="ml-2 mr-2 mb-4">
+                    
+                          <form method="post" action="">
+                              {{ form.hidden_tag() }}
+                              
+                              <div class="mb-2">{{ form.name(placeholder="Name of Week") }}</div>
+
+                              <div class="mb-2">{{ form.date() }}</div>
+                              
+                              <div class="mb-2">{{ form.url(placeholder="URL, if no type 'No')") }}</div>
+
+                              <div class="mb-2">{{ form.grps(rows=2, multiple=True, id="example") }}</div>
+                              
+                              Active &nbsp;{{ form.visible(class="") }}
+
+                              <div style="text-align: center;">
+                              {{ form.submit(class="btn btn-primary mt-5") }}
+                              </div>
+                          </form>
+
+
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+              </div>
+              
+              <div class="col"></div>
+              
+          </div>
+      
+      </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/d8440dd275.js" crossorigin="anonymous"></script>
+      
+      <link rel="stylesheet" href="{{url_for('static', filename='vanillaSelectBox.css')}}">
+      <script src="{{url_for('static', filename='vanillaSelectBox.js')}}"></script>
+      
+      <script>
+      
+          let mySelect = new vanillaSelectBox("#example",{
+    search: true
+});
+          
+          
+      </script>
+      
+      
+  </body>
+    
+</html>

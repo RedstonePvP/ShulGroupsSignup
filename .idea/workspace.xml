@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="807b807d-f9de-48c4-a3ac-1dab551875c2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1eZ8kXZcobN55aIAqkt6knW6r2T" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Groups Signup System" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.app" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="807b807d-f9de-48c4-a3ac-1dab551875c2" name="Default Changelist" comment="" />
+      <created>1594517897547</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594517897547</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="580" y="190" key="FileChooserDialogImpl" timestamp="1594685562300">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="580" y="190" key="FileChooserDialogImpl/1600.169.1280.720/0.0.1600.900/-1440.0.1440.900@0.0.1600.900" timestamp="1594685562300" />
+    <state width="1259" height="234" key="GridCell.Tab.0.bottom" timestamp="1595524231700">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="234" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1595524231700" />
+    <state width="1579" height="310" key="GridCell.Tab.0.bottom/1600.169.1280.720/-1440.0.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1595461346485" />
+    <state width="1579" height="235" key="GridCell.Tab.0.bottom/1600.169.1280.720/0.0.1600.900/-1440.0.1440.900@0.0.1600.900" timestamp="1594682837274" />
+    <state width="1259" height="234" key="GridCell.Tab.0.center" timestamp="1595524231700">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="234" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1595524231700" />
+    <state width="1579" height="310" key="GridCell.Tab.0.center/1600.169.1280.720/-1440.0.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1595461346485" />
+    <state width="1579" height="235" key="GridCell.Tab.0.center/1600.169.1280.720/0.0.1600.900/-1440.0.1440.900@0.0.1600.900" timestamp="1594682837274" />
+    <state width="1259" height="234" key="GridCell.Tab.0.left" timestamp="1595524231699">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="234" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1595524231699" />
+    <state width="1579" height="310" key="GridCell.Tab.0.left/1600.169.1280.720/-1440.0.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1595461346485" />
+    <state width="1579" height="235" key="GridCell.Tab.0.left/1600.169.1280.720/0.0.1600.900/-1440.0.1440.900@0.0.1600.900" timestamp="1594682837273" />
+    <state width="1259" height="234" key="GridCell.Tab.0.right" timestamp="1595524231700">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="234" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1595524231700" />
+    <state width="1579" height="310" key="GridCell.Tab.0.right/1600.169.1280.720/-1440.0.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1595461346485" />
+    <state width="1579" height="235" key="GridCell.Tab.0.right/1600.169.1280.720/0.0.1600.900/-1440.0.1440.900@0.0.1600.900" timestamp="1594682837274" />
+    <state x="1706" y="169" width="1150" height="808" maximized="true" key="dock-window-1" timestamp="1595458371773">
+      <screen x="1600" y="169" width="1280" height="720" />
+    </state>
+    <state x="1706" y="169" width="1150" height="808" maximized="true" key="dock-window-1/1600.169.1280.720/-1440.0.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1595458371773" />
+    <state x="-1292" y="114" width="1241" height="625" key="dock-window-1/1600.169.1280.720/0.0.1600.900/-1440.0.1440.900@0.0.1600.900" timestamp="1594679950674" />
+    <state x="1667" y="169" width="1150" height="808" maximized="true" key="dock-window-2" timestamp="1595458953042">
+      <screen x="1600" y="169" width="1280" height="720" />
+    </state>
+    <state x="1667" y="169" width="1150" height="808" maximized="true" key="dock-window-2/1600.169.1280.720/-1440.0.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1595458953042" />
+    <state x="1655" y="169" width="1239" height="624" maximized="true" key="dock-window-2/1600.169.1280.720/0.0.1600.900/-1440.0.1440.900@0.0.1600.900" timestamp="1594680803561" />
+    <state x="-1280" y="9" width="1241" height="625" maximized="true" key="dock-window-3" timestamp="1594681526588">
+      <screen x="-1440" y="0" width="1440" height="900" />
+    </state>
+    <state x="-1280" y="9" width="1241" height="625" maximized="true" key="dock-window-3/1600.169.1280.720/0.0.1600.900/-1440.0.1440.900@0.0.1600.900" timestamp="1594681526588" />
+  </component>
+</project>
